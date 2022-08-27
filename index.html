@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buckeye Bazaar</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/style.css" />
+        <script type="text/javascript" src="static/index.js"></script>
+    </head>
+    <body onload="onLoad();">
+        <div id="wrapper">
+            <div id="nav">
+                <div class="nav-entry clickable" onclick="switchPage('shop');"><strong>Buckeye Bazaar</strong></div>
+                <div class="nav-entry" id="balance-desc">Balance: $0</div>
+                <div class="nav-entry clickable" id="cart-desc" onclick="switchPage('cart');">Cart (0)</div>
+            </div>
+            <div class="page" id="shop">
+                <h1>Items For Sale</h1>
+                <div id="shop-content">
+                    err
+                </div>
+            </div>
+            <div class="page" id="cart" hidden>
+                <h1>Cart</h1>
+                <div id="cart-content">
+                    err
+                </div>
+                <div id="purchase-button">Buy for $0</div>
+            </div>
+            <div class="page" id="receipt" hidden>
+                <h1>Your Receipt</h1>
+                <h3>Thanks for shopping with us!</h3>
+                <div id="receipt-content">
+                    err
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
